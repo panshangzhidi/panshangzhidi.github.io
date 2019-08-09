@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kongzhongfeima.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-09T09:41:58.382Z</updated>
+    <updated>2019-08-09T09:45:31.769Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kongzhongfeima.github.io"/>
     <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
@@ -42,6 +42,9 @@
     info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
   });
 </script>
+一言api
+[一言_请求获得一个分类是漫画的句子](https://v1.hitokoto.cn/?c=b )
+[请求获得一个来自网络的句子，并以纯文本格式输出](https://v1.hitokoto.cn/?c=f&encode=text )
 ]]></content>
     </entry>
     <entry>
