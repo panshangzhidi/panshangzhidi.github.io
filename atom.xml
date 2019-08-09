@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>E:/office2019/OneDrive - szjm.edu.cn/output</id>
+    <id>https://kongzhongfeima.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-09T09:47:39.305Z</updated>
+    <updated>2019-08-09T09:49:26.274Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="E:/office2019/OneDrive - szjm.edu.cn/output"/>
-    <link rel="self" href="E:/office2019/OneDrive - szjm.edu.cn/output/atom.xml"/>
+    <link rel="alternate" href="https://kongzhongfeima.github.io"/>
+    <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
     <subtitle>推理小窝</subtitle>
-    <logo>E:/office2019/OneDrive - szjm.edu.cn/output/images/avatar.png</logo>
-    <icon>E:/office2019/OneDrive - szjm.edu.cn/output/favicon.ico</icon>
+    <logo>https://kongzhongfeima.github.io/images/avatar.png</logo>
+    <icon>https://kongzhongfeima.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 空中飞马</rights>
     <entry>
         <title type="html"><![CDATA[先试试啊]]></title>
-        <id>E:/office2019/OneDrive - szjm.edu.cn/output/post/无他/index.html</id>
-        <link href="E:/office2019/OneDrive - szjm.edu.cn/output/post/无他/index.html">
+        <id>https://kongzhongfeima.github.io/post/无他</id>
+        <link href="https://kongzhongfeima.github.io/post/无他">
         </link>
         <updated>2019-08-09T03:09:49.000Z</updated>
         <summary type="html"><![CDATA[<p><a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng/">Markdown 语法简单教程</a></p>
@@ -43,12 +43,15 @@
   });
 </script>
 一言api
-<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>]]></content>
+<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>E:/office2019/OneDrive - szjm.edu.cn/output/post/hello-gridea/index.html</id>
-        <link href="E:/office2019/OneDrive - szjm.edu.cn/output/post/hello-gridea/index.html">
+        <id>https://kongzhongfeima.github.io/post/hello-gridea</id>
+        <link href="https://kongzhongfeima.github.io/post/hello-gridea">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
