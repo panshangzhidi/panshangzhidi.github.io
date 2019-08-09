@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kongzhongfeima.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-09T11:22:38.500Z</updated>
+    <updated>2019-08-09T11:24:08.695Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kongzhongfeima.github.io"/>
     <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
@@ -42,7 +42,7 @@
     info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
   });
 </script>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=2423545044&auto=1&height=430"></iframe>
+<p><embed src="//music.163.com/style/swf/widget.swf?sid=2423545044&type=0&auto=1&width=310&height=430" width="330" height="450"  allowNetworking="all"></embed></p>
 ]]></content>
     </entry>
     <entry>
