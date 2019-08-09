@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | 空中飞马</title>
+<title>先试试啊 | 空中飞马</title>
 <meta name="description" content="推理小窝">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,6 +13,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://kongzhongfeima.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -91,12 +97,50 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">先试试啊</h2>
+            <div class="post-date">2019-08-09</div>
             
-              <a class="tag" href="https://kongzhongfeima.github.io/tag/LtlfocnkR">Gridea</a>
+            <div class="post-content">
+              <p>*能不能在身边<br>
+#好像知道<br>
+##还要不要<br>
+###不敢揭晓<br>
+这是摘要<!--more--><br>
+去往<a href="https://www.bilibili.com/">bilibili</a>的主页<br>
+1.gg<br>
+2.pp<br>
+3.pp</p>
+<blockquote>
+<p>明月起高楼、流光正徘徊<br>
+**这是粗体<br>
+<img src="https://kongzhongfeima.github.io/post-images/1565320659124.png" alt="一幅p站上的图片"><br>
+这是一个代码块，此行左侧有四个不可见的空格。</p>
+</blockquote>
+
+            </div>
             
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://kongzhongfeima.github.io/post/hello-gridea">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
+
         </div>
       </div>
     </div>
@@ -117,6 +161,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'a601012dd3ba1829d956',
+        clientSecret: ' 5b80fe7d5b1f3d689e93e42a70a50bcd05e16cda',
+        repo: 'kongzhongfeima.github.io',
+        owner: 'kongzhongfeima',
+        admin: ['kongzhongfeima'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
