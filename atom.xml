@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kongzhongfeima.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-09T06:02:50.469Z</updated>
+    <updated>2019-08-09T06:10:46.542Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kongzhongfeima.github.io"/>
     <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
@@ -12,11 +12,12 @@
     <rights>All rights reserved 2019, 空中飞马</rights>
     <entry>
         <title type="html"><![CDATA[先试试啊]]></title>
-        <id>https://kongzhongfeima.github.io/post/xian-shi-shi-a</id>
-        <link href="https://kongzhongfeima.github.io/post/xian-shi-shi-a">
+        <id>https://kongzhongfeima.github.io/post/无他</id>
+        <link href="https://kongzhongfeima.github.io/post/无他">
         </link>
         <updated>2019-08-09T03:09:49.000Z</updated>
-        <summary type="html"><![CDATA[<p><a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng/">Markdown 语法简单教程</a></p>
+        <summary type="html"><![CDATA[<p><a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng/">Markdown 语法简单教程</a><br>
+<img src="https://kongzhongfeima.github.io/post-images/1565331009382.png" alt=""></p>
 <p><em>34345</em><br>
 #好34465#<br>
 ##64986##<br>
@@ -37,7 +38,8 @@
 </blockquote>
 <p>还要不要</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p><a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng/">Markdown 语法简单教程</a></p>
+        <content type="html"><![CDATA[<p><a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng/">Markdown 语法简单教程</a><br>
+<img src="https://kongzhongfeima.github.io/post-images/1565331009382.png" alt=""></p>
 <p><em>34345</em><br>
 #好34465#<br>
 ##64986##<br>
