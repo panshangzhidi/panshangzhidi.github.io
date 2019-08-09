@@ -168,15 +168,13 @@
 <h3 id="如图">如图</h3>
 <p>gar`<span id="jinrishici-sentence">正在加载今日诗词....</span></p>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>`
-<p>古诗词：`<footer id="footer" role="contentinfo"></p>
-<pre><code>&lt;span id=&quot;jinrishici-sentence&quot;&gt;正在加载今日诗词....&lt;/span&gt;
-&lt;script src=&quot;https://sdk.jinrishici.com/v2/browser/jinrishici.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;br&gt;
-
-&amp;copy; &lt;?php echo date('Y'); ?&gt; &lt;a href=&quot;&lt;?php $this-&gt;options-&gt;siteUrl(); ?&gt;&quot;&gt;&lt;?php $this-&gt;options-&gt;title(); ?&gt;&lt;/a&gt;.
-&lt;?php _e('由 &lt;a href=&quot;http://www.typecho.org&quot;&gt;Typecho&lt;/a&gt; 强力驱动'); ?&gt;.
-</code></pre>
-</footer><!-- end #footer -->` </p>
+<p>古诗词：`<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script></p>
+<script type="text/javascript">
+  jinrishici.load(function(result) {
+    // 自己的处理逻辑
+    console.log(result)
+  });
+</script>` </p>
                       </div>
                   </div>
 
