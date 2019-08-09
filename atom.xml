@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kongzhongfeima.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-09T09:31:39.027Z</updated>
+    <updated>2019-08-09T09:38:53.907Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kongzhongfeima.github.io"/>
     <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
@@ -28,14 +28,16 @@
 <p><img src="https://v2.jinrishici.com/one.svg?font-size=20&amp;spacing=2&amp;color=brown" alt="今日诗词"></p>
 <p><span id="jinrishici-sentence">正在加载今日诗词....</span></p>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<p>ishiarehaierhgiare<br>
-<span id="jinrishici-sentence">正在加载今日诗词....</span></p>
+<p>ishiarehaierhgiare</p>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<div id="poem_sentence"></div>
+<div id="poem_info"></div>
 <script type="text/javascript">
   jinrishici.load(function(result) {
-    // 自己的处理逻辑
-    console.log(result)
+    var sentence = document.querySelector("#poem_sentence")
+    var info = document.querySelector("#poem_info")
+    sentence.innerHTML = result.data.content
+    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
   });
 </script>
 ]]></content>
