@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kongzhongfeima.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-09T13:18:48.938Z</updated>
+    <updated>2019-08-09T13:21:04.457Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kongzhongfeima.github.io"/>
     <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
@@ -40,6 +40,17 @@
 🌱但是我的记忆扎根于此<br>
 🌱既是无所有之乡<br>
 🌱绿意盎然亦是埋骨之地</p>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<div id="poem_sentence"></div>
+<div id="poem_info"></div>
+<script type="text/javascript">
+  jinrishici.load(function(result) {
+    var sentence = document.querySelector("#poem_sentence")
+    var info = document.querySelector("#poem_info")
+    sentence.innerHTML = result.data.content
+    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+  });
+</script>
 <h3 id="今日份配图我的白公主">今日份配图：我的白公主</h3>
 <p><img src="https://kongzhongfeima.github.io/post-images/1565356691811.jpg" alt=""></p>
 ]]></content>
