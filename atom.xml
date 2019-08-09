@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kongzhongfeima.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-09T09:49:26.274Z</updated>
+    <updated>2019-08-09T09:51:07.149Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kongzhongfeima.github.io"/>
     <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
@@ -46,6 +46,88 @@
 <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+<p>function fetch163Playlist(playlist_id) {<br>
+return new Promise(function (ok, err) {<br>
+fetch(&quot;https://v1.hitokoto.cn/nm/playlist/&quot; + playlist_id)<br>
+.then(function (response) {<br>
+return response.json();<br>
+})<br>
+.then(function (data) {<br>
+var arr = [];<br>
+data.playlist.tracks.map(function (value) {<br>
+arr.push(value.id);<br>
+});<br>
+return arr;<br>
+})<br>
+.then(function (ids) {<br>
+return fetch163Songs(ids);<br>
+})<br>
+.then(function (data) {<br>
+ok(data);<br>
+})<br>
+.catch(function (e) {<br>
+err(e);<br>
+});<br>
+})<br>
+}</p>
+<p>function fetch163Songs(IDS) {<br>
+return new Promise(function (ok, err) {<br>
+var ids;<br>
+switch (typeof IDS) {<br>
+case 'number':<br>
+ids = [IDS];<br>
+break;<br>
+case 'object':<br>
+if (!Array.isArray(IDS)) {<br>
+err(new Error(&quot;Please enter array or number&quot;));<br>
+}<br>
+ids = IDS;<br>
+break;<br>
+default:<br>
+err(new Error(&quot;Please enter array or number&quot;));<br>
+break;<br>
+}<br>
+fetch(&quot;https://v1.hitokoto.cn/nm/summary/&quot; + ids.join(&quot;,&quot;) + &quot;?lyric=true&amp;common=true&quot;)<br>
+.then(function (response) {<br>
+return response.json();<br>
+})<br>
+.then(function (data) {<br>
+var songs = [];<br>
+data.songs.map(function (song) {<br>
+songs.push({<br>
+name: song.name,<br>
+url: song.url,<br>
+artist: song.artists.join(&quot;/&quot;),<br>
+album: song.album.name,<br>
+pic: song.album.picture,<br>
+lrc: song.lyric<br>
+});<br>
+});<br>
+return songs;<br>
+})<br>
+.then(function (result) {<br>
+ok(result);<br>
+})<br>
+.catch(function (e) {<br>
+err(e);<br>
+});<br>
+});<br>
+}</p>
+<p>// 使用测试<br>
+fetch163Playlist(2158283120)<br>
+.then(function (data) {<br>
+console.log(data);<br>
+})<br>
+.catch(function (err) {<br>
+console.error(err);<br>
+})<br>
+fetch163Songs([28391863, 22640061])<br>
+.then(function (data) {<br>
+console.log(data);<br>
+})<br>
+.catch(function (err) {<br>
+console.error(err);<br>
+})</p>
 ]]></content>
     </entry>
     <entry>
