@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kongzhongfeima.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-09T09:26:11.117Z</updated>
+    <updated>2019-08-09T09:29:35.930Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kongzhongfeima.github.io"/>
     <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
@@ -25,8 +25,11 @@
 <strong>矮个人如何</strong></p>
 <h2 id="嘎嘎">嘎嘎</h2>
 <h3 id="如图">如图</h3>
+<p><img src="https://v2.jinrishici.com/one.svg?font-size=20&amp;spacing=2&amp;color=blue" alt="今日诗词"></p>
 <p><span id="jinrishici-sentence">正在加载今日诗词....</span></p>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>]]></content>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<p>ishiarehaierhgiare</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
