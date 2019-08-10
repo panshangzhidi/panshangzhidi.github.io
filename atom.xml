@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>E:/office2019/OneDrive - szjm.edu.cn/output</id>
+    <id>https://kongzhongfeima.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-10T04:57:13.504Z</updated>
+    <updated>2019-08-10T05:05:10.028Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="E:/office2019/OneDrive - szjm.edu.cn/output"/>
-    <link rel="self" href="E:/office2019/OneDrive - szjm.edu.cn/output/atom.xml"/>
+    <link rel="alternate" href="https://kongzhongfeima.github.io"/>
+    <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
     <subtitle>推理小窝</subtitle>
-    <logo>E:/office2019/OneDrive - szjm.edu.cn/output/images/avatar.png</logo>
-    <icon>E:/office2019/OneDrive - szjm.edu.cn/output/favicon.ico</icon>
+    <logo>https://kongzhongfeima.github.io/images/avatar.png</logo>
+    <icon>https://kongzhongfeima.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 空中飞马</rights>
     <entry>
         <title type="html"><![CDATA[为了N]]></title>
-        <id>E:/office2019/OneDrive - szjm.edu.cn/output/post/为了N/index.html</id>
-        <link href="E:/office2019/OneDrive - szjm.edu.cn/output/post/为了N/index.html">
+        <id>https://kongzhongfeima.github.io/post/为了N</id>
+        <link href="https://kongzhongfeima.github.io/post/为了N">
         </link>
         <updated>2019-08-10T04:49:59.000Z</updated>
         <summary type="html"><![CDATA[<p>今天上午看完了为了N</p>
@@ -34,13 +34,13 @@
 哈哈 好像主题曲 中的：  it is so silly</p>
 <p>还记得西美对成濑说：你做什么都没关系的</p>
 <h4 id="来一张masa与荣仓奈奈的背影">来一张masa与荣仓奈奈的背影</h4>
-<p>![](E:/office2019/OneDrive - szjm.edu.cn/output/post-images/1565412880858.jpg)</p>
+<p><img src="https://kongzhongfeima.github.io/post-images/1565412880858.jpg" alt=""></p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[回家第二天]]></title>
-        <id>E:/office2019/OneDrive - szjm.edu.cn/output/post/hui-jia-di-er-tian/index.html</id>
-        <link href="E:/office2019/OneDrive - szjm.edu.cn/output/post/hui-jia-di-er-tian/index.html">
+        <id>https://kongzhongfeima.github.io/post/hui-jia-di-er-tian</id>
+        <link href="https://kongzhongfeima.github.io/post/hui-jia-di-er-tian">
         </link>
         <updated>2019-08-09T13:02:54.000Z</updated>
         <summary type="html"><![CDATA[<h3 id="上午多云-下午阵雨">上午多云 下午阵雨</h3>
@@ -78,13 +78,13 @@
   });
 </script>
 <h3 id="今日份配图我的白公主">今日份配图：我的白公主</h3>
-<p>![](E:/office2019/OneDrive - szjm.edu.cn/output/post-images/1565357117967.jpg)</p>
+<p><img src="https://kongzhongfeima.github.io/post-images/1565357117967.jpg" alt=""></p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[先试试啊]]></title>
-        <id>E:/office2019/OneDrive - szjm.edu.cn/output/post/无他/index.html</id>
-        <link href="E:/office2019/OneDrive - szjm.edu.cn/output/post/无他/index.html">
+        <id>https://kongzhongfeima.github.io/post/无他</id>
+        <link href="https://kongzhongfeima.github.io/post/无他">
         </link>
         <updated>2019-08-09T03:09:49.000Z</updated>
         <summary type="html"><![CDATA[<p><a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng/">Markdown 语法简单教程</a></p>
@@ -120,8 +120,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>E:/office2019/OneDrive - szjm.edu.cn/output/post/hello-gridea/index.html</id>
-        <link href="E:/office2019/OneDrive - szjm.edu.cn/output/post/hello-gridea/index.html">
+        <id>https://kongzhongfeima.github.io/post/hello-gridea</id>
+        <link href="https://kongzhongfeima.github.io/post/hello-gridea">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
