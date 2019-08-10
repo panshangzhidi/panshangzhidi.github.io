@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kongzhongfeima.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-10T05:05:10.028Z</updated>
+    <updated>2019-08-10T05:08:23.267Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kongzhongfeima.github.io"/>
     <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
@@ -10,6 +10,33 @@
     <logo>https://kongzhongfeima.github.io/images/avatar.png</logo>
     <icon>https://kongzhongfeima.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 空中飞马</rights>
+    <entry>
+        <title type="html"><![CDATA[坏人们]]></title>
+        <id>https://kongzhongfeima.github.io/post/坏人们</id>
+        <link href="https://kongzhongfeima.github.io/post/坏人们">
+        </link>
+        <updated>2019-08-10T05:05:53.000Z</updated>
+        <summary type="html"><![CDATA[<p>工部老师</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>工部老师</p>
+<!-- more -->
+<p>前几天看了 宫部美雪的坏人们 发现自己的直觉还行   一眼瞧出夏建池是一个坏律师了   哪有整天把优质资源无偿奉献给朋友 事后还替他擦屁股的  话说他在医生杀人之前就已经和慎村有一腿了吧    果然慎村是个有脑汁的女人   不过没具体交代他们什么时候狼狈为奸的<br>
+可恶啊   医生不是说没人喜欢呆板的律师吗  直到自己医院的地皮没了  再加上2000万存款变为200万  才发觉上了套</p>
+<p>或许我潜意识里就喜欢强势的女人吧  哈哈 是喜欢被摆布吗  被玩弄于鼓掌之中  虽然四岛丰很强势   但就是她把医生引诱到犯罪路上的   食髓知味   话说医生再次返回现场是真的不明智  （就怪医生太坏了 把牛骨头穿上袜子  还漏半截在土的外面   当警官说道 ：你不是去散心吗   为何到偏远的树林来回三次   ）</p>
+<h2 id="今日诗词">今日诗词</h2>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<div id="poem_sentence"></div>
+<div id="poem_info"></div>
+<script type="text/javascript">
+  jinrishici.load(function(result) {
+    var sentence = document.querySelector("#poem_sentence")
+    var info = document.querySelector("#poem_info")
+    sentence.innerHTML = result.data.content
+    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+  });
+</script>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[为了N]]></title>
         <id>https://kongzhongfeima.github.io/post/为了N</id>
@@ -33,6 +60,18 @@
 <p>感觉到了纯爱<br>
 哈哈 好像主题曲 中的：  it is so silly</p>
 <p>还记得西美对成濑说：你做什么都没关系的</p>
+<h2 id="今日诗词">今日诗词</h2>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<div id="poem_sentence"></div>
+<div id="poem_info"></div>
+<script type="text/javascript">
+  jinrishici.load(function(result) {
+    var sentence = document.querySelector("#poem_sentence")
+    var info = document.querySelector("#poem_info")
+    sentence.innerHTML = result.data.content
+    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+  });
+</script>
 <h4 id="来一张masa与荣仓奈奈的背影">来一张masa与荣仓奈奈的背影</h4>
 <p><img src="https://kongzhongfeima.github.io/post-images/1565412880858.jpg" alt=""></p>
 ]]></content>
