@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kongzhongfeima.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-10T11:55:56.282Z</updated>
+    <updated>2019-08-10T15:14:11.774Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kongzhongfeima.github.io"/>
     <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://kongzhongfeima.github.io/images/avatar.png</logo>
     <icon>https://kongzhongfeima.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 空中飞马</rights>
+    <entry>
+        <title type="html"><![CDATA[北斗]]></title>
+        <id>https://kongzhongfeima.github.io/post/北斗实习ing</id>
+        <link href="https://kongzhongfeima.github.io/post/北斗实习ing">
+        </link>
+        <updated>2019-08-10T15:11:42.000Z</updated>
+        <content type="html"><![CDATA[<p>RIENX格式（上）：2.10版本内容解析和说明<br>
+<a href="https://blog.csdn.net/yuan22900/article/details/50435499">RIENX格式（上）：2.10版本内容解析和说明</a><br>
+MATLAB算法VIP可见：<br>
+<a href="https://blog.csdn.net/iamlsj/article/details/38061929">MATLAB算法VIP可见：</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[坏人们]]></title>
         <id>https://kongzhongfeima.github.io/post/坏人们</id>
