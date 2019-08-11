@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kongzhongfeima.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-11T01:38:29.534Z</updated>
+    <updated>2019-08-11T02:08:13.761Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kongzhongfeima.github.io"/>
     <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
@@ -10,6 +10,29 @@
     <logo>https://kongzhongfeima.github.io/images/avatar.png</logo>
     <icon>https://kongzhongfeima.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 空中飞马</rights>
+    <entry>
+        <title type="html"><![CDATA[遍身罗绮者，不是养蚕人]]></title>
+        <id>https://kongzhongfeima.github.io/post/bian-shen-luo-qi-zhe-bu-shi-yang-tian-ren</id>
+        <link href="https://kongzhongfeima.github.io/post/bian-shen-luo-qi-zhe-bu-shi-yang-tian-ren">
+        </link>
+        <updated>2019-08-11T01:42:21.000Z</updated>
+        <content type="html"><![CDATA[<p>🌱真的难受啊 现在感觉在事业单位工作真好<br>
+🌱难道我还要度过可有可无的研究生阶段 再在工作中糟蹋青春<br>
+🌱 我读研究生只是为了工作要个更高的价钱<br>
+🌱现在想想 公务员还挺轻松 哈哈  本来就想过吉良吉影植物般的生活<br>
+🌱果然长大不是说的玩的 我从不认为工作能实现我的价值<br>
+🌱只有在爱好中 得到内心的片刻安宁<br>
+🌱不知道那些富二代还会考虑考试、工作这些琐事啊<br>
+🌱长大就是被无用的事消耗殆尽 最重要的东西都会不见<br>
+🌱只留下一小撮钱和可笑的地位<br>
+🌱</p>
+<div id="weather-float-he"></div>
+<script type="text/javascript">
+WIDGET = {FID: 'KbzQ7JDMhF'}
+</script>
+<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[北斗]]></title>
         <id>https://kongzhongfeima.github.io/post/北斗实习ing</id>
