@@ -7,7 +7,7 @@
 <title>
     00 | 空中飞马
 </title>
-<link rel="shortcut icon" href="https://kongzhongfeima.github.io/favicon.ico?v=1565684392796">
+<link rel="shortcut icon" href="https://kongzhongfeima.github.io/favicon.ico?v=1565684452959">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -47,7 +47,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://kongzhongfeima.github.io">
-                <img class="avatar" src="https://kongzhongfeima.github.io/images/avatar.png?v=1565684392796" alt="">
+                <img class="avatar" src="https://kongzhongfeima.github.io/images/avatar.png?v=1565684452959" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -124,7 +124,7 @@
                             <time class="post-time">2019-08-11</time>
                             
                                 <a href="https://kongzhongfeima.github.io/tag/cGt8hBwTr" class="post-tag i-tag
-                            i-tag-error">
+                            i-tag-banana">
                             #折腾ing
                         </a>
                                 
@@ -136,25 +136,6 @@
                                     <p>放过这个<br>
 试图调用Googleapi地图</p>
 <!-- more -->
-<div id="map" style="width:100%;height:500px"></div>
- <script src="http://ditu.google.cn/maps/api/js?key=AIzaSyBp&language=zh-CN"></script>
- var mapType = google.maps.MapTypeId.ROADMAP;
-var lat = 39.915168, lng = 116.403875, zoom = 10;
-var mapOptions = {
-    center: new google.maps.LatLng(lat, lng),  //地图的中心点
-    zoom: zoom,               　　　　　　　　　　//地图缩放比例
-    mapTypeId: mapType,       　　　　　　　　　　//指定地图展示类型：卫星图像、普通道路
-    scrollwheel: true          　　　　　　　　　 //是否允许滚轮滑动进行缩放
-};
-var map = new google.maps.Map(document.getElementById("map"), mapOptions); //创建谷歌地图 var marker = new google.maps.Marker({
-    map: map,
-    position: new google.maps.LatLng(lat, lng)
-});var infowindow = new google.maps.InfoWindow({content: "北京市天安门" }); //创建一个InfoWindow
-infowindow.open(map, marker); //把这个infoWindow绑定在选定的marker上面
-//使用谷歌地图定义的事件，给这个marker添加点击事件
-google.maps.event.addListener(marker, "click", function(){
-    infowindow.open(map,marker);
-});
  <h1>asghai</h1>
 [另一个主题](https://github.com/Mrcxt/gridea-theme-lemon)
 <p>又一个天气插件</p>
@@ -186,6 +167,31 @@ tpwidget("show");</script>
 <p align="right" style="background-color:rgb(255,255,0)"><object><embed src="F:/前端的/flash4926.swf" height="100%" width="100%"></embed></object></P>
 <p>音乐插件</p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=167912&auto=1&height=66"></iframe>
+谷歌地图
+<p>&lt;!doctype html&gt;</p>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+    <title>Baidu Map V1.2</title>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2&services=true">
+	    <!-- add baidu map api -->
+    </script>
+</head>
+<body>
+    <div id="container" style="width: 600px; height: 400px;">
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    var map = new BMap.Map("container");            	    // new Map
+    var point = new BMap.Point(116.397128, 39.916527);      // Location, （经度, 纬度）
+    map.centerAndZoom(point, 15);                   	    // show Map
+<pre><code>// 添加缩放功能
+map.enableScrollWheelZoom();
+map.enableKeyboard();
+</code></pre>
+</script>
                                 </div>
                     </article>
                     <!--  -->
@@ -210,7 +216,7 @@ tpwidget("show");</script>
                                 <!-- id-card -->
                                 
     <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://kongzhongfeima.github.io/images/avatar.png?v=1565684392796)">
+        <div class="id_card-avatar" style="background-image: url(https://kongzhongfeima.github.io/images/avatar.png?v=1565684452959)">
         </div>
         <h1 class="id_card-title">
             空中飞马
