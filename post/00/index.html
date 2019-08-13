@@ -7,7 +7,7 @@
 <title>
     00 | 空中飞马
 </title>
-<link rel="shortcut icon" href="https://kongzhongfeima.github.io/favicon.ico?v=1565683025039">
+<link rel="shortcut icon" href="https://kongzhongfeima.github.io/favicon.ico?v=1565683399156">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -47,7 +47,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://kongzhongfeima.github.io">
-                <img class="avatar" src="https://kongzhongfeima.github.io/images/avatar.png?v=1565683025039" alt="">
+                <img class="avatar" src="https://kongzhongfeima.github.io/images/avatar.png?v=1565683399156" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -124,7 +124,7 @@
                             <time class="post-time">2019-08-11</time>
                             
                                 <a href="https://kongzhongfeima.github.io/tag/cGt8hBwTr" class="post-tag i-tag
-                            i-tag-info">
+                            i-tag-other_4">
                             #折腾ing
                         </a>
                                 
@@ -136,22 +136,25 @@
                                     <p>放过这个<br>
 试图调用Googleapi地图</p>
 <!-- more -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJW4jsPlNKgv6jFm3B5Edp5ywgdqLWdmc&callback=initMap" async defer></script>
-<script>
-function initialize()
-{
-    var mapProp = {
-        center:new google.maps.LatLng(51.508742,-0.120850),
-        zoom:5,
-        mapTypeId:google.maps.MapTypeId.ROADMAP
-    };
-    var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
- 
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-<div id="googleMap" style="width:500px;height:380px;"></div>
-<script src="http://mapv.baidu.com/build/mapv.min.js"></script>
+<div id="map" style="width:100%;height:500px"></div>
+ <script src="http://ditu.google.cn/maps/api/js?key=AIzaSyBp&language=zh-CN"></script>
+ var mapType = google.maps.MapTypeId.ROADMAP;
+var lat = 39.915168, lng = 116.403875, zoom = 10;
+var mapOptions = {
+    center: new google.maps.LatLng(lat, lng),  //地图的中心点
+    zoom: zoom,               　　　　　　　　　　//地图缩放比例
+    mapTypeId: mapType,       　　　　　　　　　　//指定地图展示类型：卫星图像、普通道路
+    scrollwheel: true          　　　　　　　　　 //是否允许滚轮滑动进行缩放
+};
+var map = new google.maps.Map(document.getElementById("map"), mapOptions); //创建谷歌地图 var marker = new google.maps.Marker({
+    map: map,
+    position: new google.maps.LatLng(lat, lng)
+});var infowindow = new google.maps.InfoWindow({content: "北京市天安门" }); //创建一个InfoWindow
+infowindow.open(map, marker); //把这个infoWindow绑定在选定的marker上面
+//使用谷歌地图定义的事件，给这个marker添加点击事件
+google.maps.event.addListener(marker, "click", function(){
+    infowindow.open(map,marker);
+});
  <h1>asghai</h1>
 [另一个主题](https://github.com/Mrcxt/gridea-theme-lemon)
 <p>又一个天气插件</p>
@@ -205,7 +208,7 @@ tpwidget("show");</script>
                                 <!-- id-card -->
                                 
     <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://kongzhongfeima.github.io/images/avatar.png?v=1565683025039)">
+        <div class="id_card-avatar" style="background-image: url(https://kongzhongfeima.github.io/images/avatar.png?v=1565683399156)">
         </div>
         <h1 class="id_card-title">
             空中飞马
