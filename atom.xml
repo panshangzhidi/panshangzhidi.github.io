@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kongzhongfeima.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-13T08:03:20.964Z</updated>
+    <updated>2019-08-13T08:08:00.993Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kongzhongfeima.github.io"/>
     <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
@@ -64,12 +64,12 @@ tpwidget("show");</script>
 <p><img src="https://kongzhongfeima.github.io/post-images/1565680148251.png" alt=""></p>
 <p><strong><p style="background-color:rgb(255,255,0)">通过rgb值设置背景颜色</p></strong></p>
 <p align="right"><object>
-	<embed src="F:\前端的\flash4923.swf"  width="50%" height="50%"></embed>
+	<embed src="F:/前端的/flash4923.swf"  width="50%" height="50%"></embed>
 </object></P>
 <p>来自网站的图片											
 <img src="http://www.w3school.com.cn/i/w3school_logo_white.gif"/>
 	</p>
-<p align="right" style="background-color:rgb(255,255,0)"><object><embed src="F:\前端的\flash4926.swf" height="100%" width="100%"></embed></object></P>]]></content>
+<p align="right" style="background-color:rgb(255,255,0)"><object><embed src="F:/前端的/flash4926.swf" height="100%" width="100%"></embed></object></P>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[遍身罗绮者，不是养蚕人]]></title>
