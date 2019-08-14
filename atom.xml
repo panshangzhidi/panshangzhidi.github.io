@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kongzhongfeima.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-14T08:39:29.091Z</updated>
+    <updated>2019-08-14T08:56:01.512Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kongzhongfeima.github.io"/>
     <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
@@ -74,7 +74,6 @@
     "hash": "53ae1c1f0c18b4fa03958642dbe88ffe"
 });
 tpwidget("show");</script>
-<p><img src="https://kongzhongfeima.github.io/post-images/1565680148251.png" alt=""></p>
 <p><strong><p style="background-color:rgb(255,255,0)">通过rgb值设置背景颜色</p></strong></p>
 <p align="right"><object>
 	<embed src="F:/前端的/flash4923.swf"  width="50%" height="50%"></embed>
@@ -85,31 +84,7 @@ tpwidget("show");</script>
 <p align="right" style="background-color:rgb(255,255,0)"><object><embed src="F:/前端的/flash4926.swf" height="100%" width="100%"></embed></object></P>
 <p>音乐插件</p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=167912&auto=1&height=66"></iframe>
-谷歌地图
-<p>&lt;!doctype html&gt;</p>
-<html>
-<head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
-    <title>Baidu Map V1.2</title>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2&services=true">
-	    <!-- add baidu map api -->
-    </script>
-</head>
-<body>
-    <div id="container" style="width: 600px; height: 400px;">
-    </div>
-</body>
-</html>
-<script type="text/javascript">
-    var map = new BMap.Map("container");            	    // new Map
-    var point = new BMap.Point(116.397128, 39.916527);      // Location, （经度, 纬度）
-    map.centerAndZoom(point, 15);                   	    // show Map
-<pre><code>// 添加缩放功能
-map.enableScrollWheelZoom();
-map.enableKeyboard();
-</code></pre>
-</script>]]></content>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[遍身罗绮者，不是养蚕人]]></title>
