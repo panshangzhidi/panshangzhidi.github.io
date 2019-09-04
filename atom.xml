@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://kongzhongfeima.github.io</id>
+    <id>https://panshangzhidi.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-08-28T12:57:02.399Z</updated>
+    <updated>2019-09-04T06:46:55.610Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://kongzhongfeima.github.io"/>
-    <link rel="self" href="https://kongzhongfeima.github.io/atom.xml"/>
+    <link rel="alternate" href="https://panshangzhidi.github.io"/>
+    <link rel="self" href="https://panshangzhidi.github.io/atom.xml"/>
     <subtitle>推理小窝</subtitle>
-    <logo>https://kongzhongfeima.github.io/images/avatar.png</logo>
-    <icon>https://kongzhongfeima.github.io/favicon.ico</icon>
+    <logo>https://panshangzhidi.github.io/images/avatar.png</logo>
+    <icon>https://panshangzhidi.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 空中飞马</rights>
     <entry>
         <title type="html"><![CDATA[北斗ing]]></title>
-        <id>https://kongzhongfeima.github.io/post/北斗ing</id>
-        <link href="https://kongzhongfeima.github.io/post/北斗ing">
+        <id>https://panshangzhidi.github.io/post/北斗ing</id>
+        <link href="https://panshangzhidi.github.io/post/北斗ing">
         </link>
         <updated>2019-08-27T09:52:00.000Z</updated>
         <summary type="html"><![CDATA[<p>RIENX格式（上）：2.10版本内容解析和说明</p>
@@ -120,8 +120,8 @@ Z      Output Z-transformation matrix</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[未完成的]]></title>
-        <id>https://kongzhongfeima.github.io/post/未完成的</id>
-        <link href="https://kongzhongfeima.github.io/post/未完成的">
+        <id>https://panshangzhidi.github.io/post/未完成的</id>
+        <link href="https://panshangzhidi.github.io/post/未完成的">
         </link>
         <updated>2019-08-27T09:46:53.000Z</updated>
         <summary type="html"><![CDATA[<p>我好菜啊！</p>
@@ -133,8 +133,8 @@ Z      Output Z-transformation matrix</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[日系推理小说合集[TXT]]]></title>
-        <id>https://kongzhongfeima.github.io/post/日系推理小说合集-TXT</id>
-        <link href="https://kongzhongfeima.github.io/post/日系推理小说合集-TXT">
+        <id>https://panshangzhidi.github.io/post/日系推理小说合集-TXT</id>
+        <link href="https://panshangzhidi.github.io/post/日系推理小说合集-TXT">
         </link>
         <updated>2019-08-24T09:41:42.000Z</updated>
         <summary type="html"><![CDATA[<p>在网上那个找的80余本txt日本推理</p>
@@ -146,8 +146,8 @@ Z      Output Z-transformation matrix</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[折原一]]></title>
-        <id>https://kongzhongfeima.github.io/post/折原一</id>
-        <link href="https://kongzhongfeima.github.io/post/折原一">
+        <id>https://panshangzhidi.github.io/post/折原一</id>
+        <link href="https://panshangzhidi.github.io/post/折原一">
         </link>
         <updated>2019-08-23T13:23:20.000Z</updated>
         <summary type="html"><![CDATA[<p>这两天看了三本叙诡的书</p>
@@ -195,8 +195,8 @@ Z      Output Z-transformation matrix</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[到校第三天/倒错的归结]]></title>
-        <id>https://kongzhongfeima.github.io/post/到校第三天-倒错的归结</id>
-        <link href="https://kongzhongfeima.github.io/post/到校第三天-倒错的归结">
+        <id>https://panshangzhidi.github.io/post/到校第三天-倒错的归结</id>
+        <link href="https://panshangzhidi.github.io/post/到校第三天-倒错的归结">
         </link>
         <updated>2019-08-23T08:00:38.000Z</updated>
         <summary type="html"><![CDATA[<p>脱力一般</p>
@@ -209,8 +209,8 @@ Z      Output Z-transformation matrix</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[圣母]]></title>
-        <id>https://kongzhongfeima.github.io/post/圣母</id>
-        <link href="https://kongzhongfeima.github.io/post/圣母">
+        <id>https://panshangzhidi.github.io/post/圣母</id>
+        <link href="https://panshangzhidi.github.io/post/圣母">
         </link>
         <updated>2019-08-22T15:06:01.000Z</updated>
         <summary type="html"><![CDATA[<p><strong>圣母</strong><br>
@@ -246,8 +246,8 @@ Z      Output Z-transformation matrix</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[到校第二天]]></title>
-        <id>https://kongzhongfeima.github.io/post/到校第二天</id>
-        <link href="https://kongzhongfeima.github.io/post/到校第二天">
+        <id>https://panshangzhidi.github.io/post/到校第二天</id>
+        <link href="https://panshangzhidi.github.io/post/到校第二天">
         </link>
         <updated>2019-08-22T14:49:16.000Z</updated>
         <summary type="html"><![CDATA[<p>今天是到校第二天</p>
@@ -269,8 +269,8 @@ Z      Output Z-transformation matrix</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[为你写诗 为你静止]]></title>
-        <id>https://kongzhongfeima.github.io/post/为你写诗</id>
-        <link href="https://kongzhongfeima.github.io/post/为你写诗">
+        <id>https://panshangzhidi.github.io/post/为你写诗</id>
+        <link href="https://panshangzhidi.github.io/post/为你写诗">
         </link>
         <updated>2019-08-19T14:14:23.000Z</updated>
         <summary type="html"><![CDATA[<p>为你失去理智</p>
@@ -285,8 +285,8 @@ Z      Output Z-transformation matrix</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[我好难啊]]></title>
-        <id>https://kongzhongfeima.github.io/post/我好难啊—但我相信父母不会嫌弃我</id>
-        <link href="https://kongzhongfeima.github.io/post/我好难啊—但我相信父母不会嫌弃我">
+        <id>https://panshangzhidi.github.io/post/我好难啊—但我相信父母不会嫌弃我</id>
+        <link href="https://panshangzhidi.github.io/post/我好难啊—但我相信父母不会嫌弃我">
         </link>
         <updated>2019-08-13T12:47:32.000Z</updated>
         <summary type="html"><![CDATA[<p>各单位注意：负面情绪即将决堤！</p>
@@ -317,8 +317,8 @@ Z      Output Z-transformation matrix</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[00]]></title>
-        <id>https://kongzhongfeima.github.io/post/00</id>
-        <link href="https://kongzhongfeima.github.io/post/00">
+        <id>https://panshangzhidi.github.io/post/00</id>
+        <link href="https://panshangzhidi.github.io/post/00">
         </link>
         <updated>2019-08-11T06:12:52.000Z</updated>
         <summary type="html"><![CDATA[<p>放过这个<br>
