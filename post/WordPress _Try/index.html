@@ -155,8 +155,34 @@ var css = '<';
 			<div class="wow slideInLeft entry-summary song">
 				<p><p>检验域名解析是否成功（国内解析较慢 几个小时）ping www.xuewangzhan.net -t<br>
 域名可以申请到免费的，常见的是.tk域名，申请地址：http://www.dot.tk/<br>
-最后一步，把你刚申请的域名映射到你的网站。举例：在我的github上，新建一个CNAME文件，其中填写我的域名。</p>
-</p>
+最后一步，把你刚申请的域名映射到你的网站。举例：在我的github上，新建一个CNAME文件，其中填写我的域名。<br>
+<a href="https://console.bce.baidu.com/dns/#/dns/domain/list~zoneName=kongzhongfeima.top">百度云控制台</a><br>
+<a href="https://swas.console.aliyun.com/?spm=5176.12901015.0.i12901015.42e6525cLoxHCZ#/servers">阿里云控制台</a></p>
+<hr>
+<p>尝试调用今日诗词api（图形）<br>
+<img src="https://v2.jinrishici.com/one.svg?font-size=20&amp;spacing=2&amp;color=brown" alt="今日诗词"><br>
+尝试调用今日诗词api（文字）<br>
+<span id="jinrishici-sentence">正在加载今日诗词....</span></p>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<p>今日诗词api高级用法</p>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<div id="poem_sentence"></div>
+<div id="poem_info"></div>
+<script type="text/javascript">
+  jinrishici.load(function(result) {
+    var sentence = document.querySelector("#poem_sentence")
+    var info = document.querySelector("#poem_info")
+    sentence.innerHTML = result.data.content
+    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+  });
+</script>
+​
+---
+​
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="https://music.163.com/outchain/player?type=0&id=2423545044&auto=1&height=430"></iframe>
+<h2 id="script-typetextjavascript-srchttpsapixygengcndailywdapigetjsphpscript"><script type="text/javascript" src="https://api.xygeng.cn/dailywd/api/getjs.php"></script><br>
+​</h2>
+<img src="https://api.xygeng.cn/bing/1920.php" alt="Bing每日图片超高清" /></p>
 							</div>
 	<div class="wow bounceInDown vt-post-tags">
  
