@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://panshangzhidi.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-09-09T13:36:52.015Z</updated>
+    <updated>2019-09-12T02:45:05.430Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://panshangzhidi.github.io"/>
     <link rel="self" href="https://panshangzhidi.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://panshangzhidi.github.io/images/avatar.png</logo>
     <icon>https://panshangzhidi.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 空中飞马</rights>
+    <entry>
+        <title type="html"><![CDATA[百度域名+阿里服务器]]></title>
+        <id>https://panshangzhidi.github.io/post/WordPress _Try</id>
+        <link href="https://panshangzhidi.github.io/post/WordPress _Try">
+        </link>
+        <updated>2019-09-12T02:43:10.000Z</updated>
+        <content type="html"><![CDATA[<p>检验域名解析是否成功（国内解析较慢 几个小时）ping www.xuewangzhan.net -t</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[满目破碎]]></title>
         <id>https://panshangzhidi.github.io/post/满目破碎</id>
@@ -294,29 +303,6 @@ Z      Output Z-transformation matrix</p>
 🌱最后   书名取得好 <strong>恰是圣母</strong></p>
 <hr>
 <p>...我写这么认真也是为了我的新博客啊</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[到校第二天]]></title>
-        <id>https://panshangzhidi.github.io/post/到校第二天</id>
-        <link href="https://panshangzhidi.github.io/post/到校第二天">
-        </link>
-        <updated>2019-08-22T14:49:16.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天是到校第二天</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天是到校第二天</p>
-<!-- more -->
-<p>🌱到校后发现自己已经习惯学校的小床了 不晓得以后挣大钱了还能住惯酒店吗<br>
-🌱今天看了《圣母》写的还可以 具体的写在别处吧</p>
-<h4 id="自己在群里说的话越来越少-对他人事无兴趣">🌎自己在群里说的话越来越少 对他人事无兴趣</h4>
-<p>🌱不晓得他们这么多话 得意时还会想起他人吗<br>
-🌱哈哈 当初放手果然正确无比 麻木像一个冷血侦探<br>
-🌱不知道 她当初问我夏令营干嘛  希望她可以实现自己愿望  迪士尼去了吗 豆芽开花了吗</p>
-<h5 id="走时姐姐婆婆出了点毛病-不过我并不是很难受">🌎走时姐姐婆婆出了点毛病 不过我并不是很难受</h5>
-<p>🌱还是希望早点好吧 姐就不用整天跑了</p>
-<h4 id="昨天看了点-轮到你了-感觉公寓里没一个正常的人">🌎昨天看了点 轮到你了 感觉公寓里没一个正常的人</h4>
-<p>🌱小菜奈说的大象和长颈鹿是什么呢 很瘆人<br>
-🌱感觉结局要崩</p>
 ]]></content>
     </entry>
 </feed>
