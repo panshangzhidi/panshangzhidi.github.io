@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://panshangzhidi.github.io</id>
     <title>空中飞马</title>
-    <updated>2019-09-12T02:45:05.430Z</updated>
+    <updated>2019-09-12T02:46:23.501Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://panshangzhidi.github.io"/>
     <link rel="self" href="https://panshangzhidi.github.io/atom.xml"/>
@@ -16,7 +16,9 @@
         <link href="https://panshangzhidi.github.io/post/WordPress _Try">
         </link>
         <updated>2019-09-12T02:43:10.000Z</updated>
-        <content type="html"><![CDATA[<p>检验域名解析是否成功（国内解析较慢 几个小时）ping www.xuewangzhan.net -t</p>
+        <content type="html"><![CDATA[<p>检验域名解析是否成功（国内解析较慢 几个小时）ping www.xuewangzhan.net -t<br>
+域名可以申请到免费的，常见的是.tk域名，申请地址：http://www.dot.tk/<br>
+最后一步，把你刚申请的域名映射到你的网站。举例：在我的github上，新建一个CNAME文件，其中填写我的域名。</p>
 ]]></content>
     </entry>
     <entry>
