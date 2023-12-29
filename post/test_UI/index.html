@@ -3,37 +3,82 @@
 <head>
   <title>Text Editor and Viewer</title>
   <style>
-    #preamble {
-      float: left;
+    .container {
+      display: flex;
+      justify-content: space-between;
     }
-    #myDiv {
-      float: left;
-      margin-left: 10px;
+    #myTextarea {
+      width: 60%;
+    }
+    table {
+      width: 100%;
+    }
+    td {
+      width: 50%;
+    }
+    .textviewer {
+      display: flex;
+    }
+    .preamble {
+      margin-right: 10px;
     }
   </style>
 </head>
 <body>
   <h2>Text Editor</h2>
-  <textarea id="myTextarea" rows="10" cols="50">
-  </textarea>
+  <div class="container">
+    <textarea id="myTextarea" rows="10"></textarea>
+    <button onclick="removeNewlines()">删除换行符</button>
+  </div>
 
   <h2>Text Viewer</h2>
-  <div id="preamble">preamble</div>
-  <div id="myDiv">
-  </div>
-  <button onclick="copyToClipboard()">Copy</button>
-  <span id="copyAlert"></span>
-  <button onclick="removeNewlines()">删除换行符</button>
+  <table>
+    <tr>
+      <td>
+        <div class="textviewer">
+          <div class="preamble">preamble</div>
+          <div id="myDiv1"></div>
+          <button onclick="copyToClipboard('myDiv1')">Copy</button>
+        </div>
+      </td>
+      <td>
+        <div class="textviewer">
+          <div class="preamble">preamble</div>
+          <div id="myDiv2"></div>
+          <button onclick="copyToClipboard('myDiv2')">Copy</button>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="textviewer">
+          <div class="preamble">preamble</div>
+          <div id="myDiv3"></div>
+          <button onclick="copyToClipboard('myDiv3')">Copy</button>
+        </div>
+      </td>
+      <td>
+        <div class="textviewer">
+          <div class="preamble">preamble</div>
+          <div id="myDiv4"></div>
+          <button onclick="copyToClipboard('myDiv4')">Copy</button>
+        </div>
+      </td>
+    </tr>
+  </table>
 
   <script>
     document.getElementById('myTextarea').addEventListener('input', function() {
-      document.getElementById('myDiv').innerText = this.value;
+      document.getElementById('myDiv1').innerText = this.value;
+      document.getElementById('myDiv2').innerText = this.value;
+      document.getElementById('myDiv3').innerText = this.value;
+      document.getElementById('myDiv4').innerText = this.value;
     });
 
-    function copyToClipboard() {
-      var preamble = document.getElementById('preamble').innerText;
-      var text = document.getElementById('myDiv').innerText;
-      var fullText = preamble + ' ' + text;
+    function copyToClipboard(id) {
+      var preamble = document.querySelector('.preamble').innerText;
+      var text = document.getElementById(id).innerText;
+      var fullText = preamble + '\n' + text;
 
       var dummy = document.createElement('textarea');
       document.body.appendChild(dummy);
@@ -42,17 +87,17 @@
       document.execCommand('copy');
       document.body.removeChild(dummy);
 
-      var copyAlert = document.getElementById('copyAlert');
-      copyAlert.innerText = 'Copied!';
+      var copyAlert = document.createElement('span');
+      copyAlert.innerText = ' Copied!';
+      document.getElementById(id).after(copyAlert);
       setTimeout(function() {
-        copyAlert.innerText = '';
+        copyAlert.remove();
       }, 3000);
     }
 
     function removeNewlines() {
-      var text = document.getElementById('myDiv').innerText;
+      var text = document.getElementById('myTextarea').value;
       var newText = text.replace(/(\r\n|\n|\r)/gm, " ");
-      document.getElementById('myDiv').innerText = newText;
       document.getElementById('myTextarea').value = newText;
     }
   </script>
