@@ -13,6 +13,7 @@
   </div>
   <button onclick="copyToClipboard()">Copy</button>
   <span id="copyAlert"></span>
+  <button onclick="removeNewlines()">删除换行符</button>
 
   <script>
     document.getElementById('myTextarea').addEventListener('input', function() {
@@ -33,6 +34,13 @@
       setTimeout(function() {
         copyAlert.innerText = '';
       }, 3000);
+    }
+
+    function removeNewlines() {
+      var text = document.getElementById('myDiv').innerText;
+      var newText = text.replace(/(\r\n|\n|\r)/gm, "");
+      document.getElementById('myDiv').innerText = newText;
+      document.getElementById('myTextarea').value = newText;
     }
   </script>
 </body>
