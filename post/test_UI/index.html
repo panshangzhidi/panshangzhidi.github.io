@@ -2,6 +2,15 @@
 <html>
 <head>
   <title>Text Editor and Viewer</title>
+  <style>
+    #preamble {
+      float: left;
+    }
+    #myDiv {
+      float: left;
+      margin-left: 10px;
+    }
+  </style>
 </head>
 <body>
   <h2>Text Editor</h2>
@@ -9,9 +18,9 @@
   </textarea>
 
   <h2>Text Viewer</h2>
+  <div id="preamble">preamble</div>
   <div id="myDiv">
   </div>
-  <div id="preamble">preamble</div>
   <button onclick="copyToClipboard()">Copy</button>
   <span id="copyAlert"></span>
   <button onclick="removeNewlines()">删除换行符</button>
@@ -24,7 +33,7 @@
     function copyToClipboard() {
       var preamble = document.getElementById('preamble').innerText;
       var text = document.getElementById('myDiv').innerText;
-      var fullText = preamble + '\n' + text;
+      var fullText = preamble + ' ' + text;
 
       var dummy = document.createElement('textarea');
       document.body.appendChild(dummy);
