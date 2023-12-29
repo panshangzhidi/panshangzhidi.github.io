@@ -12,6 +12,7 @@
   <div id="myDiv">
   </div>
   <button onclick="copyToClipboard()">Copy</button>
+  <span id="copyAlert"></span>
 
   <script>
     document.getElementById('myTextarea').addEventListener('input', function() {
@@ -26,6 +27,12 @@
       dummy.select();
       document.execCommand('copy');
       document.body.removeChild(dummy);
+
+      var copyAlert = document.getElementById('copyAlert');
+      copyAlert.innerText = 'Copied!';
+      setTimeout(function() {
+        copyAlert.innerText = '';
+      }, 3000);
     }
   </script>
 </body>
