@@ -11,6 +11,7 @@
   <h2>Text Viewer</h2>
   <div id="myDiv">
   </div>
+  <div id="preamble">preamble</div>
   <button onclick="copyToClipboard()">Copy</button>
   <span id="copyAlert"></span>
   <button onclick="removeNewlines()">删除换行符</button>
@@ -21,10 +22,13 @@
     });
 
     function copyToClipboard() {
+      var preamble = document.getElementById('preamble').innerText;
       var text = document.getElementById('myDiv').innerText;
+      var fullText = preamble + '\n' + text;
+
       var dummy = document.createElement('textarea');
       document.body.appendChild(dummy);
-      dummy.value = text;
+      dummy.value = fullText;
       dummy.select();
       document.execCommand('copy');
       document.body.removeChild(dummy);
@@ -38,7 +42,7 @@
 
     function removeNewlines() {
       var text = document.getElementById('myDiv').innerText;
-      var newText = text.replace(/(\r\n|\n|\r)/gm, "");
+      var newText = text.replace(/(\r\n|\n|\r)/gm, " ");
       document.getElementById('myDiv').innerText = newText;
       document.getElementById('myTextarea').value = newText;
     }
