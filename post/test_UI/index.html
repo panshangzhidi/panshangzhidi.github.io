@@ -7,7 +7,7 @@
       display: flex;
       justify-content: space-between;
     }
-    #myTextarea {
+    #myTextarea, #dropzone {
       width: 60%;
     }
     table {
@@ -19,12 +19,12 @@
     .textviewer {
       display: flex;
       margin: 10px;
+      align-items: center;
     }
     .preamble {
       margin-right: 10px;
     }
     #dropzone {
-      width: 100%;
       height: 50px;
       border: 1px solid black;
       margin-top: 20px;
@@ -36,65 +36,67 @@
   <div class="container">
     <textarea id="myTextarea" rows="10"></textarea>
     <button onclick="removeNewlines()" title="换行符替换为空格">删除换行符</button>
+    <br>
   </div>
 
   <h2>Text Viewer</h2>
   <table>
     <tr>
       <td>
-        <div class="textviewer" draggable="true" ondragstart="drag(event)" id="myDiv1">
-          <div class="preamble">preamble</div>
-          <button onclick="copyToClipboard('myDiv1')">Copy</button>
+        <div class="textviewer">
+          <input type="text" class="preamble" value="请解释说明：" oninput="updatePreamble(event)" id="myDiv1">
+          <input type="radio" name="textviewer" onchange="updateRectangle(event)" id="radio1">
         </div>
       </td>
       <td>
-        <div class="textviewer" draggable="true" ondragstart="drag(event)" id="myDiv2">
-          <div class="preamble">preamble</div>
-          <button onclick="copyToClipboard('myDiv2')">Copy</button>
+        <div class="textviewer">
+          <input type="text" class="preamble" value="请详细解释以下代码：" oninput="updatePreamble(event)" id="myDiv2">
+          <input type="radio" name="textviewer" onchange="updateRectangle(event)" id="radio2">
         </div>
       </td>
     </tr>
     <tr>
       <td>
-        <div class="textviewer" draggable="true" ondragstart="drag(event)" id="myDiv3">
-          <div class="preamble">preamble</div>
-          <button onclick="copyToClipboard('myDiv3')">Copy</button>
+        <div class="textviewer">
+          <input type="text" class="preamble" value="执行代码后，出现以下错误" oninput="updatePreamble(event)" id="myDiv3">
+          <input type="radio" name="textviewer" onchange="updateRectangle(event)" id="radio3">
         </div>
       </td>
       <td>
-        <div class="textviewer" draggable="true" ondragstart="drag(event)" id="myDiv4">
-          <div class="preamble">preamble</div>
-          <button onclick="copyToClipboard('myDiv4')">Copy</button>
+        <div class="textviewer">
+          <input type="text" class="preamble" value="请为以下代码添加详细注释：" oninput="updatePreamble(event)" id="myDiv4">
+          <input type="radio" name="textviewer" onchange="updateRectangle(event)" id="radio4">
         </div>
       </td>
     </tr>
   </table>
 
-  <div id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <textarea id="dropzone" rows="2"></textarea>
+
+  <button onclick="copyToClipboard()">Copy</button>
 
   <script>
+    var currentId = null;
+
     document.getElementById('myTextarea').addEventListener('input', function() {
-      var textviewers = document.getElementsByClassName('textviewer');
-      for (var i = 0; i < textviewers.length; i++) {
-        textviewers[i].innerText = this.value;
+      if (currentId) {
+        document.getElementById('dropzone').value = document.getElementById(currentId).value + ' ' + this.value;
       }
     });
 
-    function copyToClipboard(id) {
-      var preamble = document.querySelector('.preamble').innerText;
-      var text = document.getElementById(id).innerText;
-      var fullText = preamble + '\n' + text;
+    function copyToClipboard() {
+      var text = document.getElementById('dropzone').value;
 
       var dummy = document.createElement('textarea');
       document.body.appendChild(dummy);
-      dummy.value = fullText;
+      dummy.value = text;
       dummy.select();
       document.execCommand('copy');
       document.body.removeChild(dummy);
 
       var copyAlert = document.createElement('span');
       copyAlert.innerText = ' Copied!';
-      document.getElementById(id).after(copyAlert);
+      document.getElementById('dropzone').after(copyAlert);
       setTimeout(function() {
         copyAlert.remove();
       }, 3000);
@@ -104,20 +106,21 @@
       var text = document.getElementById('myTextarea').value;
       var newText = text.replace(/(\r\n|\n|\r)/gm, " ");
       document.getElementById('myTextarea').value = newText;
+        // Update the text in the rectangle
+      if (currentId) {
+      	document.getElementById('dropzone').value = document.getElementById(currentId).value + ' ' + newText;
+  }
     }
 
-    function drag(ev) {
-      ev.dataTransfer.setData("text", ev.target.id);
+    function updateRectangle(event) {
+      currentId = event.target.previousElementSibling.id;
+      document.getElementById('dropzone').value = document.getElementById(currentId).value;
     }
 
-    function drop(ev) {
-      ev.preventDefault();
-      var data = ev.dataTransfer.getData("text");
-      ev.target.appendChild(document.getElementById(data));
-    }
-
-    function allowDrop(ev) {
-      ev.preventDefault();
+    function updatePreamble(event) {
+      if (currentId == event.target.id) {
+        document.getElementById('dropzone').value = event.target.value;
+      }
     }
   </script>
 </body>
