@@ -18,9 +18,16 @@
     }
     .textviewer {
       display: flex;
+      margin: 10px;
     }
     .preamble {
       margin-right: 10px;
+    }
+    #dropzone {
+      width: 100%;
+      height: 50px;
+      border: 1px solid black;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -28,51 +35,49 @@
   <h2>Text Editor</h2>
   <div class="container">
     <textarea id="myTextarea" rows="10"></textarea>
-    <button onclick="removeNewlines()">删除换行符</button>
+    <button onclick="removeNewlines()" title="换行符替换为空格">删除换行符</button>
   </div>
 
   <h2>Text Viewer</h2>
   <table>
     <tr>
       <td>
-        <div class="textviewer">
+        <div class="textviewer" draggable="true" ondragstart="drag(event)" id="myDiv1">
           <div class="preamble">preamble</div>
-          <div id="myDiv1"></div>
           <button onclick="copyToClipboard('myDiv1')">Copy</button>
         </div>
       </td>
       <td>
-        <div class="textviewer">
+        <div class="textviewer" draggable="true" ondragstart="drag(event)" id="myDiv2">
           <div class="preamble">preamble</div>
-          <div id="myDiv2"></div>
           <button onclick="copyToClipboard('myDiv2')">Copy</button>
         </div>
       </td>
     </tr>
     <tr>
       <td>
-        <div class="textviewer">
+        <div class="textviewer" draggable="true" ondragstart="drag(event)" id="myDiv3">
           <div class="preamble">preamble</div>
-          <div id="myDiv3"></div>
           <button onclick="copyToClipboard('myDiv3')">Copy</button>
         </div>
       </td>
       <td>
-        <div class="textviewer">
+        <div class="textviewer" draggable="true" ondragstart="drag(event)" id="myDiv4">
           <div class="preamble">preamble</div>
-          <div id="myDiv4"></div>
           <button onclick="copyToClipboard('myDiv4')">Copy</button>
         </div>
       </td>
     </tr>
   </table>
 
+  <div id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
   <script>
     document.getElementById('myTextarea').addEventListener('input', function() {
-      document.getElementById('myDiv1').innerText = this.value;
-      document.getElementById('myDiv2').innerText = this.value;
-      document.getElementById('myDiv3').innerText = this.value;
-      document.getElementById('myDiv4').innerText = this.value;
+      var textviewers = document.getElementsByClassName('textviewer');
+      for (var i = 0; i < textviewers.length; i++) {
+        textviewers[i].innerText = this.value;
+      }
     });
 
     function copyToClipboard(id) {
@@ -99,6 +104,20 @@
       var text = document.getElementById('myTextarea').value;
       var newText = text.replace(/(\r\n|\n|\r)/gm, " ");
       document.getElementById('myTextarea').value = newText;
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+
+    function allowDrop(ev) {
+      ev.preventDefault();
     }
   </script>
 </body>
