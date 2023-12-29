@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Editor and Viewer</title>
+</head>
+<body>
+  <h2>Text Editor</h2>
+  <textarea id="myTextarea" rows="10" cols="50">
+  </textarea>
+
+  <h2>Text Viewer</h2>
+  <div id="myDiv">
+  </div>
+
+  <script>
+    document.getElementById('myTextarea').addEventListener('input', function() {
+      document.getElementById('myDiv').innerText = this.value;
+    });
+  </script>
+</body>
+</html>
