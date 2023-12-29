@@ -11,11 +11,22 @@
   <h2>Text Viewer</h2>
   <div id="myDiv">
   </div>
+  <button onclick="copyToClipboard()">Copy</button>
 
   <script>
     document.getElementById('myTextarea').addEventListener('input', function() {
       document.getElementById('myDiv').innerText = this.value;
     });
+
+    function copyToClipboard() {
+      var text = document.getElementById('myDiv').innerText;
+      var dummy = document.createElement('textarea');
+      document.body.appendChild(dummy);
+      dummy.value = text;
+      dummy.select();
+      document.execCommand('copy');
+      document.body.removeChild(dummy);
+    }
   </script>
 </body>
 </html>
