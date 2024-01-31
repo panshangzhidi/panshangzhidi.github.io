@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .red-text {
+      color: red;
+    }
+    .half-size {
+      font-size: 50%;
+    }
+  </style>
+</head>
+<body>
 
+<h2>进制转换器</h2>
+
+输入:
+<input id="input" type="text" value="80B03B00" oninput="convert()"><br>
+选择输入的进制:
+<select id="inputBase" onchange="convert()">
+  <option value="2">二进制</option>
+  <option value="10">十进制</option>
+  <option value="16" selected>十六进制</option>
+</select><br>
+选择输出的进制:
+<select id="outputBase" onchange="convert()">
+  <option value="2">二进制</option>
+  <option value="10">十进制</option>
+  <option value="16">十六进制</option>
+</select><br>
+输出:
+<div id="output"></div>
+位索引:
+<div id="bitIndex" class="half-size"></div>
+
+<script>
+function formatBinary(bin) {
+  var formatted = '';
+  var bitIndex = '';
+  for (var i = bin.length-1; i >= 0; i--) {
+    formatted = bin[i] + ' ' + formatted;
+    bitIndex = (bin.length-1-i) + ' ' + bitIndex;
+    if (i % 4 == 0 && i != 0) {
+      formatted = '<span class="red-text">||</span>' + ' ' + formatted;
+      bitIndex = '   ' + bitIndex;
+    }
+  }
+  return [formatted, bitIndex];
+}
+
+function convert() {
+  var input = document.getElementById("input").value;
+  var inputBase = document.getElementById("inputBase").value;
+  var outputBase = document.getElementById("outputBase").value;
+
+  if (inputBase == outputBase) {
+    document.getElementById("output").innerText = input;
+  } else {
+    var decimal = parseInt(input, inputBase);
+    if (isNaN(decimal)) {
+      document.getElementById("output").innerText = "无效的输入！";
+    } else {
+      if (outputBase == 2) {
+        var bin = decimal.toString(outputBase);
+        bin = bin.padStart(Math.ceil(bin.length/4)*4, '0');  // 补全到4的倍数位
+        var [output, bitIndex] = formatBinary(bin);
+        document.getElementById("output").innerHTML = output;
+        document.getElementById("bitIndex").innerText = bitIndex;
+      } else {
+        document.getElementById("output").innerText = decimal.toString(outputBase);
+        document.getElementById("bitIndex").innerText = '';
+      }
+    }
+  }
+}
+convert();
+</script>
+
+</body>
+</html>
